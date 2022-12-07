@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9864d609d0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+</head>
+<body class="flex items-center justify-center bg-[#181f2a]">
+  <main class="flex flex-col w-96 md:w-1440">
+    <!-- Main -->
+    <section class="bg-[#1c2431] h-96 flex flex-col relative md:h-1200" >
+      <!-- Intro Section -->
+      <header class="flex justify-between items-center mt-5 mr-4 ml-4 md:mt-8 md:ml-10 md:mr-10">
+        <div class="flex cursor-pointer">
+          <img src="images/logo.svg" alt="logo" class="w-28 md:w-36">  
+        </div>
+        <nav class="flex">
+          <p class="text-slate-300 cursor-pointer mr-4 md:mr-7 md:text-lg md:hover:text-white md:hover:underline">Features</p>
+          <p class="text-slate-300 cursor-pointer mr-4 md:mr-7 md:text-lg md:hover:text-white md:hover:underline">Team</p>
+          <p class="text-slate-300 cursor-pointer mr-4 md:text-lg md:hover:text-white md:hover:underline">Sign In</p>
+        </nav>
+      </header>
+      <figure class="relative z-10 ml-9 mt-8">
+        <img class="w-80 md:w-max md:ml-72 md:mt-24" src="images/illustration-intro.png" alt="intro" >
+      </figure>
+      <div class="absolute top-64 md:top-[800px]">
+        <img src="images/bg-curvy-mobile.svg" alt="" class="block md:hidden">
+        <img src="images/bg-curvy-desktop.svg" alt="" class="block sm:hidden md:block" >
+      </div>
+    </section>
+
+    <section class="flex flex-col bg-[#181f2a] h-96 items-center z-10 ">
+      <!-- Main section -->
+      <div class="flex flex-col justify-center ml-6 mr-6  items-center text-center md:absolute md:top-[770px] md:items-center">
+        <p class="text-white text-2xl md:w-[600px]  font-bold mb-5 md:text-[35px]">
+          All your files in one secure location, accessible anywhere.
+        </p>
+        <p class="text-slate-200 md:w-[450px] md:mt-5 ">
+          Fylo stores all your most important files in one secure location. Accses them wherever you need, share and collaborate with friends family, and co-workers.
+        </p>
+        <button class="bg-[#5bbde7] text-white mt-7 rounded-full py-3 px-24 lg:cursor-pointer md:font-bold md:text-lg md:hover:bg-[#7fcef0] md:transition-all md:delay-75">Get Started</button>
+      </div>
+
+      <section class="text-center items-center mt-32 ml-5 mr-5 md:grid md:grid-cols-2 md:gap-x-44 md:gap-y-28 ">
+        <div class="flex flex-col items-center mb-24 md:m-0">
+          <img src="images/icon-access-anywhere.svg" alt="" class="mb-10 ">
+          <p class="text-white text-xl">Accses your files, anywhere</p>
+          <p class="text-slate-200 mt-2 md:w-96">The ability to use a smartphone, tablet, or computer to accses your account means your files follow you everywhere</p>
+        </div>
+        <div class="flex flex-col items-center mb-24 md:m-0">
+          <img src="images/icon-security.svg" alt="" class="mb-10 ">
+          <p class="text-white text-xl">Security you can trust</p>
+          <p class="text-slate-200 mt-2 md:w-96">2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+        </div>
+        <div class="flex flex-col items-center mb-24 md:m-0">
+          <img src="images/icon-collaboration.svg" alt="" class="mb-10 ">
+          <p class="text-white text-xl">Real-time collaboration</p>
+          <p class="text-slate-200 mt-2 md:w-96">Securely share files and folders with friends, family and colleagues for live colloboration. No email attachments required.</p>
+        </div>
+        <div class="flex flex-col items-center  md:m-0">
+          <img src="images/icon-any-file.svg" alt="" class="mb-10 ">
+          <p class="text-white text-xl">Store any type of file</p>
+          <p class="text-slate-200 mt-2 md:w-96">Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+        </div>
+      </section>
+
+      <section class="flex flex-col ml-7 mr-7  mt-44 md:flex-row md:items-center md:ml-32">
+        <!-- Stay productive Section -->
+        <img src="images/illustration-stay-productive.png" alt="" class="mb-10">
+        <div class="md:ml-20">
+          <article>
+            <p class="text-white text-xl ml-2 mb-4 md:ml-0 md:text-[40px] md:w-[350px] md:leading-10 md:font-bold">Stay productive, wherever you are</p>
+            <p class="text-slate-200 md:w-[500px]">Never let location be an issue when accsesing your files. Fylo has you covered for all of your file storage needs.</p>
+            <p class="text-slate-200 mt-4">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+          </article>
+          <div class="flex mt-4 items-center border-b-[#65e2d9] md:transition-all md:hover:border-b-white border-b-2 w-fit lg:cursor-pointer">
+            <p class="text-[#65e2d9] mr-2 md:hover:text-white">See how Fylo works</p>
+            <img src="images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="flex relative flex-col ml-10 mr-10 mt-28 md:grid md:grid-cols-3 md:pb-3 md:gap-x-8 md:ml-32 md:mr-32 md:relative">
+        <!-- Reviews Section -->
+        <div class="absolute -top-5 md:-top-8 md:-left-2">
+          <img src="images/bg-quotes.png" alt="bg-quotes" class="w-6 md:w-14">
+        </div>
+        <div class="flex flex-col bg-[#243042] rounded-md mb-6 pb-5 shadow-2xl relative md:h-full">
+          <article class="ml-6 mt-6 mr-6 md:mt-8">
+            <p class="text-white text-sm md:text-base">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+          </article>
+          <div class="flex mt-5 ml-6 items-center">
+            <img src="images/profile-1.jpg" alt="" class="w-7 rounded-full">
+            <div class="flex flex-col ml-2">
+              <p class="text-white text-sm md:font-bold">Satihst Patel</p>
+              <p class="text-slate-400 text-xs">Founder & CEO, Huddle</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-[#243042] rounded-md mb-6 pb-5 shadow-2xl md:h-full">
+          <article class="ml-6 mt-6 mr-6 md:mt-8">
+            <p class="text-white text-sm md:text-base">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+          </article>
+          <div class="flex mt-5 ml-6 items-center">
+            <img src="images/profile-2.jpg" alt="" class="w-7 rounded-full">
+            <div class="flex flex-col ml-2">
+              <p class="text-white text-sm md:font-bold">Bruce McKenzie</p>
+              <p class="text-slate-400 text-xs">Founder & CEO, Huddle</p>
+            </div>
+        </div>
+        </div>
+        <div class="flex flex-col bg-[#243042] rounded-md mb-6 pb-5 shadow-2xl md:h-full">
+          <article class="ml-6 mt-6 mr-6 md:mt-8">
+            <p class="text-white text-sm md:text-base">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+          </article>
+          <div class="flex mt-5 ml-6 items-center">
+            <img src="images/profile-3.jpg" alt="" class="w-7 rounded-full">
+            <div class="flex flex-col ml-2">
+              <p class="text-white text-sm md:font-bold">Iva Boyd</p>
+              <p class="text-slate-400 text-xs">Founder & CEO, Huddle</p>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      
+      
+      <footer class="bg-[#0b1523] flex flex-col w-full pb-10 mt-96 relative md:flex-row md:items-center">
+        <section class="bg-[#222c3b] mt-16 ml-5 mr-5 rounded-lg absolute -top-56 pb-8 md:pb-2 shadow-2xl md:w-2/4 md:ml-[350px]">
+          <!-- Email Section -->
+          <div class="flex flex-col ml-5 mr-5 mt-7 text-center z-20 md:mt-16">
+            <p class="text-white text-lg font-bold mb-4 md:text-[30px]">Get early accses today</p>
+            <p class="text-slate-300">It only takes a minute to sign up and our free starter tier is extremely generous. If you have ant questions, our support team would be happy to help you.</p>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <input id="email-el" type="text" placeholder="email@example.com" class="ml-1 mr-1 h-12 pl-8 rounded-full mt-7 mb-6 placeholder:text-sm md:w-2/3">
+              <button id="btn-el" class="text-white bg-[#65c5e2] ml-1 mr-1 h-12 rounded-full font-bold md:ml-4 md:px-4 md:hover:bg-[#7fcef0] md:transition-all md:delay-75">Get Started For Free</button>
+            </div>
+            <div id="warning-el" class="md:mb-2"></div>
+          </div>
+        </section>
+        <div class="flex flex-col mt-64 md:mt-24">
+          <div class="ml-10 md:ml-24">
+            <img src="images/logo.svg" alt="logo" width="150px">  
+          </div>
+          <div class="md:flex md:items-center md:ml-20 md:mr-24">
+            <div class="flex ml-6 mt-10 items-start">
+              <img src="images/icon-location.svg" alt="location" class="mt-2 mr-5">
+              <p class="text-white md:w-80 md:mr-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla soluta hic ipsam temporibus est reiciendis, saepe, molestiae veniam.</p>
+            </div>
+            <div class="flex flex-col">
+              <div class="flex ml-6 mt-7 items-start md:mt-3">
+                <img src="images/icon-phone.svg" alt="phone" class="mr-5 mt-1">
+                <p class="text-white">+1-543-123-4567</p>
+              </div>
+              <div class="flex ml-6 mt-7 items-start md:mt-3">
+                <img src="images/icon-email.svg" alt="email" class="mr-5 mt-1">
+                <p class="text-white">example@fylo.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="flex flex-col ml-6 mt-20 md:flex-row md:mt-56 md:items-start md:ml-12">
+          <!-- About Us -->
+          <div>
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">About Us</p>
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">Jobs</p>
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">Press</p>
+            <p class="text-slate-300 text-lg md:hover:text-white delay-75 cursor-pointer">Blog</p>
+          </div>
+          <div class="mt-12 md:ml-24 md:mr-24 md:mt-0 m">
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">Contact Us</p>
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">Terms</p>
+            <p class="text-slate-300 text-lg mb-2 md:hover:text-white delay-75 cursor-pointer">Privacy</p>
+          </div>
+          <figure class="mr-8 mt-14 md:mt-0">
+            <i class="fa-brands fa-facebook text-white mr-4 cursor-pointer md:hover:text-blue-400 transition-all delay-75"></i>
+            <i class="fa-brands fa-twitter text-white mr-4 cursor-pointer md:hover:text-blue-400 transition-all delay-75"></i>
+            <i class="fa-brands fa-instagram text-white cursor-pointer md:hover:text-blue-400 transition-all delay-75"></i>
+          </figure>
+        </section>
+
+      </footer>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
