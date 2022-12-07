@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://dainty-mousse-203294.netlify.app/(https://dainty-mousse-203294.netlify.app/)
+- Live Site URL: [https://dainty-mousse-203294.netlify.app/](https://dainty-mousse-203294.netlify.app/)
 
 ## My process
 
